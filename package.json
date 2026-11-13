@@ -1,0 +1,26 @@
+{
+  "name": "agripulse-ai-root",
+  "version": "1.0.0",
+  "description": "AgriPulse AI - AI-Powered Agriculture Crop Advisory Assistant",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently \"npm run dev --prefix server\" \"npm run dev --prefix client\"",
+    "dev:server": "npm run dev --prefix server",
+    "dev:client": "npm run dev --prefix client",
+    "install:all": "npm install && npm install --prefix server && npm install --prefix client",
+    "build:client": "npm run build --prefix client",
+    "migrate": "npm run migrate --prefix server"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  },
+  "keywords": [
+    "agriculture",
+    "ai",
+    "gemini",
+    "crop-advisory",
+    "smart-farming"
+  ],
+  "author": "AgriPulse AI Engineering Team",
+  "license": "MIT"
+}
